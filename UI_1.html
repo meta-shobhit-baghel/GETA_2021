@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+  <title>Metacube Parking System</title>
+</head>
+
+<body>
+    <adding navigation bar>
+    <div>
+        <ul>
+            <li><a href="#employee">Add Employee</a></li>
+            <li><a href="#vehicle">Add Vehicle</a></li>
+            <li><a href="#feedback">Give Feedback</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+    </div>
+
+    <adding cover image>
+    <img src="image.jpg" >
+
+    <hr>
+    <adding employee form>
+    <div id="employee">
+        <form action="" id="employeeform">
+            <fieldset>
+                <legend><b>Employee Details</b></legend>
+                <label for="fullname">Full Name: </label><br>
+                <input type="text" id="fullname" name="fullname" required autofocus>
+                <br><br>
+
+                <label for="gender">Gender: </label><br>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="other" value="other" required>
+                <label for="other">Other</label>
+                <br><br>
+
+                <label for="email">Email ID: </label><br>
+                <input type="email" name="email_id" id="email" required>
+                <br><br>
+
+                <label for="password">Password: </label><br>
+                <input type="password" name="password" id="password" minlength="8">
+                <br><br>
+
+                <label for="confirm_password">Confirm Password: </label><br>
+                <input type="password" name="confirm_password" id="confirm_password" minlength="8" required>
+                <br><br>
+
+                <label for="contact">Contact Number: </label><br>
+                <input type="tel" name="contact" id="contact" pattern="[0-9]{10}" required>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+    <adding vehicle form>
+    <div id="vehicle">
+        <form action="" id="vehicleform">
+            <fieldset>
+                <legend><b>Vehicle Details</b></legend>
+                <label for="company">Vehicle Company: </label><br>
+                <input type="text" id="company" name="comapny" required autofocus>
+                <br><br>
+
+                <label for="model">Vehicle Model: </label><br>
+                <input type="text" id="model" name="model" required>
+                <br><br>
+
+                <label for="type">Choose Type: </label>
+                <select id="type" name="type" required>
+                    <option value="cycle">Cycle</option>
+                    <option value="motor_cycle">Motorcycle</option>
+                    <option value="four_wheeler">Four Wheeler</option>
+                </select>
+                <br><br>
+
+                <label for="vehicle_number">Vehicle Number: </label><br>
+                <input type="text" id="vehicle_number" name="vehicle_number" pattern="[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}" placeholder="XX00XX0000" required>
+                <br><br>
+
+                <label for="employee_id">Employee ID: </label><br>
+                <input type="text" id="employee_id" name="employee_id" required>
+                <br><br>
+
+                <label for="identification">Identification: </label><br>
+                <textarea name="identification" id="identification" placeholder="Color, Mark, Visible accessory, etc." rows="4" cols="30"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+    < adding feedback form >
+    <div id="feedback">
+        <form action="" id="feedbackform">
+            <fieldset>
+                <legend><b>Give Feedback</b></legend>
+                <label for="name">Name: </label><br>
+                <input type="text" name="name" id="name" required autofocus>
+                <br><br>
+
+                <label for="email">Email ID: </label><br>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+
+                <label for="subject">Subject: </label><br>
+                <input type="text" name="subject" id="subject" required>
+                <br><br>
+
+                <label for="message">Message: </label><br>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+    <div id="pricing">
+        <form action="" id="cycle">
+            <fieldset>
+                <div>
+                    <h2>Cycle</h2>
+                    <h4>$1 Daily</h4>
+                    <h4>$10 Monthly</h4>
+                    <h4>$50 Yearly</h4>
+                </div>
+                <button type="submit">PURCHASE NOW</button>
+            </fieldset>
+        </form>
+        <form action="" id="motorcycle">
+            <fieldset>
+                <div>
+                    <h2>Motorcycle</h2>
+                    <h4>$10 Daily</h4>
+                    <h4>$150 Monthly</h4>
+                    <h4>$500 Yearly</h4>
+                </div>
+                <button type="submit">PURCHASE NOW</button>
+            </fieldset>
+        </form>
+        <form action="" id="four_wheeler">
+            <fieldset>
+                <div>
+                    <h2>Four Wheelers</h2>
+                    <h4>$50 Daily</h4>
+                    <h4>$500 Monthly</h4>
+                    <h4>$5000 Yearly</h4>
+                </div>
+                <button type="submit">PURCHASE NOW</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
